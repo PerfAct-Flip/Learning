@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loops</title>
+</head>
+<body>
+    <div class="container">
+        This is abt loops
+    </div>
+    <script>
+        // FOR ARRAYS
+        let frnds = ["Rohan", "Sanjeev", "Deepti", "Pooja" ];
+        /*
+        for (let i = 0; i < frnds.length; i++) {
+            let element = frnds[i];
+            console.log(element);  
+        }*/
+        // modern javascript method 
+        frnds.forEach((element) =>{
+            console.log(element);
+            
+        });
+        // another method 
+        for(element of frnds){
+            console.log("you are frnd: " + element);
+        }
+        // FOR OBJECTS
+        let employee = {
+            name: "Harry",
+            salary: 2,
+            channel: "CWH"
+        }
+
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(26, 24, 24);
+            color: aliceblue;
+        }
+        .container h1{
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 5px;
+        }
+        .btn{
+            background-color: brown;
+            color: azure;
+            padding: 4px;
+            margin: 10px 2px;
+            border: 2px solid whitesmoke;
+            border-radius: 5px;
+            font-size: .95rem;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .btn:hover{
+            font-size: larger;
+            /* background-color: wheat; */
+            /* display: ; */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Browser events:
+    click
+    contextmenu(right click)
+    mousehover/mouseout
+    mouusedown/mouseup
+    mousemove
+    submit
+    focus
+    DOMContentLoaded
+    Transitionend
+     -->
+     <div class="container">
+        <h1> PerfAct Flip</h1>
+        <p id="para" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda esse qui quis eum dolore, suscipit adipisci nulla doloremque voluptate earum deleniti nobis at a debitis dolorum necessitatibus delectus obcaecati. Voluptatibus recusandae minima architecto assumenda enim in animi, nostrum aliquid,
+        
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae porro qui nobis in? Magni, consequatur pariatur! Nam veniam dicta molestiae consequuntur quasi, vel officiis obcaecati nisi corrupti amet neque sint repudiandae aperiam ut. Praesentium aliquid perferendis doloremque eligendi deserunt!
+        
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae porro qui nobis in? Magni, consequatur pariatur! Nam veniam dicta molestiae consequuntur quasi, vel officiis obcaecati nisi corrupti amet neque sint repudiandae aperiam ut. Praesentium aliquid perferendis doloremque eligendi deserunt!
+        
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae porro qui nobis in? Magni, consequatur pariatur! Nam veniam dicta molestiae consequuntur quasi, vel officiis obcaecati nisi corrupti amet neque sint repudiandae aperiam ut. Praesentium aliquid perferendis doloremque eligendi deserunt!
+        </p>
+     </div>
+     <button class="btn" onclick="control()">Show/hide</button>
+     <script>
+        let p = document.getElementById('para');
+        p.addEventListener('mouseover', function runover(){
+            // let para1 = document.getElementById('para');
+            p.style.backgroundColor = "rgb(116, 70, 2)";
+            // alert("mouse over");
+        });
+        p.addEventListener('mouseout', function runout(){
+            // alert("mouse out")
+            p.style.backgroundColor = "black";
+        });
+        function control(){
+            // let para = document.getElementById('para');
+            if(para.style.display != "none"){
+                para.style.display = "none";
+            }
+            else{
+                para.style.display = "block";
+            }
+            
+        }
+     </script>
+</body>
+</html>

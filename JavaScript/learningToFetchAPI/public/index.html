@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        if ("geolocation" in navigator) {
+            /* geolocation is available */
+            console.log(' geolocation is available');
+            navigator.geolocation.getCurrentPosition(function(position) {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+
+                document.getElementById('latitude').textContent = latitude.toFixed(3);
+                document.getElementById('longitude').textContent = longitude.toFixed(3);
+                console.log(position);
+                // console.log();
+                const data = {latitude, longitude};
+                const options = {
+                    methods: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                };
+                fetch('/api', options).then(response => {
+                    console.log(response);
+                });
+            });
+
+        } else {
+            /* geolocation IS NOT available */
+            console.log(' geolocation is NOT available');
+        }
+    </script>
+
+    <h1>Data Selfie App</h1>
+
+    <p>
+        latitude: <span id="latitude"></span><br>
+        longitude: <span id="longitude"></span>
+    </p>
+</body>
+
+</html>

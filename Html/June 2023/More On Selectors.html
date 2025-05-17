@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1{
+            background-color:olivedrab ;
+            color: burlywood ;
+        }
+        /* if p is cotained by any li which is contained by div */
+        /* div li p{
+            color:azure;
+            background-color: blueviolet;
+        } */
+        /* if p is right inside div then this CSS will be applied */
+        /* div > p{
+            color:azure;
+            background-color: blueviolet;
+        } */
+        /* if p is right after div i.e p is the next sibling of div */
+        /* div + p{
+            color:azure;
+            background-color: blueviolet;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors </h1>
+    <div class="container">
+        <div class="row">
+            <p>This is a row paragraph</p>
+            <ul><li><p>this is paragraph inside list </p></li></ul>
+        </div>
+        <p>This is container paragraph.</p>
+    </div>
+    <p>This is body paragraph.</p>
+</body>
+</html>

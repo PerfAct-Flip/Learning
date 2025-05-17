@@ -1,0 +1,54 @@
+body{
+    background-color:rgb(33, 30, 46);
+    color: antiquewhite;
+}
+h1{
+    border: 8px solid rgb(0, 0, 0);
+    color: rgb(33, 30, 46);
+    background-color: antiquewhite;
+    width: fit-content;
+    height: fit-content;
+    padding:10px;
+    margin:20px;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    line-height: 10px;
+    /* border-width: 2px;
+    border-style: groove;
+    border-color: aquamarine; */
+    border-radius: 4px;
+    border-left: 4px red groove ;
+    width:fit-content;
+    height:fit-content;
+    padding: 10px;
+    border-top-left-radius: 3px;
+}
+
+#box1{ float: left;
+    width: 47%;
+    border: 5px groove yellowgreen;
+    padding: 10px;
+}
+
+#box2{
+     float: right;
+     width: 47%;
+     border: 5px groove yellowgreen;
+     padding: 10px;
+}
+
+#box3{
+    float: clear;
+    width: auto;
+    border: 5px groove yellowgreen;
+    padding: 10px;
+}
+
+/* #box4{
+    float: right;
+    width: 47%;
+    border: 5px groove yellowgreen;
+    padding: 10px;
+} */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and  Text Shadowing</title>
+    <style>
+        body{
+            color: wheat;
+            background-color: rgb(37, 35, 35);
+            
+        }
+        /* html{
+            font-size: 4px;
+        } */
+        .container{
+            display: flex;
+        }
+        .card{
+            /* border: 2px solid rgb(122, 105, 122); */
+            padding: 23px;
+            margin: 24px;
+            background-color: black;
+            color: rgb(224, 151, 14);
+            box-shadow: 10px 8px 5px rgba(224, 151, 14, 0.4), 2px 2px 5px rgba(106, 28, 230, 0.7) ;
+            /* text-shadow: 2px 2px rgb(185, 185, 185); */
+            /* width: 100px; */
+        }
+        h1{
+            text-shadow: 2px 2px 2px rgba(255, 0, 0, 0.678);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1"><h1>Card 1</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim, earum voluptatum doloremque blanditiis ex aliquam architecto labore explicabo veniam.</p></div>
+        <div class="card" id="card2"><h1>Card 2</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim, earum voluptatum doloremque blanditiis ex aliquam architecto labore explicabo veniam.</p></div>
+        <div class="card" id="card3"><h1>Card 3</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim, earum voluptatum doloremque blanditiis ex aliquam architecto labore explicabo veniam.</p></div>
+        <div class="card" id="card4"><h1>Card 4</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim, earum voluptatum doloremque blanditiis ex aliquam architecto labore explicabo veniam.</p></div>
+    </div>
+</body>
+</html>

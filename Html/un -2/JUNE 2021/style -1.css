@@ -1,0 +1,42 @@
+h1, h2, h3{
+    text-align: center;
+}
+h2{
+    font-weight: lighter;
+}
+.container{
+    background-color: rgb(218, 162, 78);
+    color: rgb(97, 0, 0);
+    border: solid rgb(134, 77, 77) 4px;
+    padding: 40px;
+    margin: 20px auto;
+    width: 50%;
+}
+.btn{
+    background-color: rgb(172, 172, 45);
+    color: brown;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+a{
+    text-decoration: none;
+    /* use to decorate the element. in this case we used none to remove the line under the line.*/
+}
+a:hover{
+    color: rgb(29, 112, 84);
+    background-color: bisque;
+}
+a:visited{
+    color: blue;
+    background-color: rgb(90, 61, 27);
+}
+a:active{
+    background-color: rgb(144, 144, 201);
+}
+button:hover{
+    color: black;
+    background-color: azure;
+}
+/* bootstrap have classes defined */

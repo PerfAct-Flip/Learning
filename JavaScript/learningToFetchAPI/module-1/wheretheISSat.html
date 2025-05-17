@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where the ISS at?</title>
+
+    <!-- leaflet-css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- leaflet-script  -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <style>
+        #ISSmap {
+            height: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Where the ISS?</h1>
+
+    <p>
+        latitude: <span id="lat"></span>°
+        <br>
+        longitude: <span id="lon"></span>°
+    </p>
+    <div id="ISSmap"></div>
+
+    <script>
+        //API url and tiles
+        const mymap = L.map('ISSmap').setView([0, 0], 1);
+        const attribution =
+            '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+        const tileURL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+
+
+        const tiles = L.tileLayer(tileURL, { attribution });
+        tiles.addTo(mymap);
+
+        const url = 'https://api.wheretheiss.at/v1/satellites/25544';
+
+        //Marker with custom icon
+        const issIcon = L.icon({
+            iconUrl: 'data/iss252.png',
+            iconSize: [50, 32],
+            iconAnchor: [25, 16],
+        });
+        const marker = L.marker([50.505, 30.57], {icon: issIcon}).addTo(mymap);
+
+
+        let firstTime = true;
+        // Function
+        async function getISS() {
+            const response = await fetch(url);
+            const data = await response.json();
+            const { latitude, longitude } = data;
+
+            // const marker = L.marker([latitude, longitude]).addTo(mymap);
+            marker.setLatLng([latitude, longitude]);
+            if(firstTime){
+                mymap.setView([latitude, longitude],2);
+                firstTime = false;
+            }
+            
+            document.getElementById('lat').textContent = latitude.toFixed(2);
+            document.getElementById('lon').textContent = longitude.toFixed(2);
+            console.log(latitude);
+            console.log(longitude);
+        }
+
+
+        // getISS();
+
+        setInterval(getISS, 2000);
+    </script>
+</body>
+
+</html>

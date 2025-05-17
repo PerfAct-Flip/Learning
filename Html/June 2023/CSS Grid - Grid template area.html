@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+            
+        }
+        .box{
+            background-color: rgb(95, 74, 189);
+            color: rgb(203, 198, 252);
+            border: 3px solid black;
+            padding: 30px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box"> Home About Contact Us </div>
+        <div id="section" class="box">section Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sequi, saepe repudiandae maiores earum soluta distinctio unde doloremque dicta doloribus repellendus cupiditate autem, eligendi, exercitationem tempora. Unde dolorem iure non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo reprehenderit explicabo saepe corporis molestias, placeat ratione, eos iure voluptates dolores earum facilis praesentium, perspiciatis sunt laborum illum incidunt maiores eaque sed. Animi cupiditate placeat rerum aspernatur temporibus esse? Accusamus quia esse harum, recusandae dignissimos quo facere obcaecati odit deserunt hic expedita assumenda, fugit officiis. Reprehenderit numquam totam architecto minus pariatur iste harum facere provident atque dolor ea, error quae eaque modi quis nam et qui enim adipisci exercitationem perspiciatis consectetur ratione aspernatur. Aut commodi quidem voluptatibus placeat sapiente! Earum omnis modi natus labore assumenda necessitatibus fugiat, voluptate pariatur molestiae ullam quod saepe nulla quasi soluta eligendi culpa quo hic aspernatur obcaecati neque sequi aut nam non. Vitae, minus! Ducimus, velit, amet nobis delectus doloremque quo, odio magni pariatur quas inventore dolorem earum! Molestiae ducimus eligendi autem veritatis possimus fugiat nam temporibus minus inventore quasi? Doloremque, consequatur, voluptatum, impedit adipisci explicabo ex nemo dolorem dolores quaerat animi aliquid sequi quas veniam neque excepturi et possimus? Atque dignissimos quibusdam earum ea quod laudantium? Similique atque dicta magnam accusamus! A nulla quas architecto quisquam veniam iure nihil deleniti, eaque quidem temporibus rerum voluptatum odit culpa ut aliquid eos pariatur natus dolores? Inventore, nostrum.</div>
+        <div id="aside" class="box"> aside Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut quibusdam magni inventore dolorem culpa soluta esse ipsam facilis enim reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, iure ea maiores tempore incidunt sapiente totam eveniet eum, sequi mollitia, numquam architecto ad facere dolor. Aspernatur, debitis. Tempore mollitia commodi quae, laborum cumque minima sed sapiente dicta nemo ipsa aperiam. Veritatis neque adipisci sit, error eum ab rem at nostrum impedit mollitia quibusdam consequatur deserunt ipsam iste numquam tempore quia temporibus quidem alias doloribus. Exercitationem earum corporis incidunt dolorum quisquam, distinctio vel aliquam nam minus numquam blanditiis consectetur non assumenda debitis nesciunt alias beatae consequuntur illo commodi vero repellat. Laborum distinctio magni ea ut voluptate, numquam cum earum? Ipsa dolorem vitae, eum culpa cum alias accusantium necessitatibus. Voluptatem, animi distinctio saepe architecto suscipit itaque vel natus iure tempora deleniti inventore hic illum ratione similique. Nisi facilis, inventore ex, facere fuga aspernatur eaque expedita quo voluptatibus ea veniam quia odio eius, libero exercitationem sunt qui sequi mollitia odit. Soluta aliquam sint officia rerum consequuntur eaque aspernatur qui tempore. Quam praesentium doloremque, deleniti provident aliquid, necessitatibus laborum amet tempore voluptatibus dolore alias fugit ratione. Laudantium dolorem reiciendis hic eveniet labore. Quos cupiditate facere tenetur ipsam nostrum, provident similique nihil aut ipsa doloribus odio iure inventore enim qui adipisci harum ea porro debitis!</div>
+        <footer class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ab.</footer>
+        <!-- <div class="box">This is item box - 1</div>
+        <div class="box">This is item box - 2</div>
+        <div class="box">This is item box - 3</div>
+        <div class="box">This is item box - 4</div>
+        <div class="box">This is item box - 5</div>
+        <div class="box">This is item box - 6</div>
+        <div class="box">This is item box - 7</div>
+        <div class="box">This is item box - 8</div>
+        <div class="box">This is item box - 9</div>
+        <div class="box">This is item box - 10</div>
+        <div class="box">This is item box - 11</div>
+        <div class="box">This is item box - 12</div> -->
+    </div>
+</body>
+</html>

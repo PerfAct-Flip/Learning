@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable/custom properties</title>
+    <style>
+        :root{
+            --box-color: rgb(71, 5, 116);
+        }
+        body{
+            background-color: rgb(27, 21, 21);
+        }
+        .container{ display: flex;
+        }
+        .box{
+            /* use double dash to make something a variable and give it a value  */
+            /* they can be used inside only the box it is in */
+            /* it is a local variable */
+            /* to make a global variable which can used everywhere then we have to use :root */
+        
+            
+            width: 200px;
+            height: 200px;
+            /* background-color: blue; */
+            background-color: var(--box-color);
+            box-shadow: 10px 10px 3px rgb(132, 132, 163);
+            margin:10px 10px;
+            border: 1px solid black; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Date and Time</title>
+    <style>
+        body{
+            font-size: 2rem;
+        }
+        #time{
+            font-weight: 600;
+            background-color: black;
+            color: antiquewhite;
+            padding: 4px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cotainer">
+        Time: <span id="time"></span>
+    </div>
+    <script>
+        // new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        // let dt = new Date(2023,11,20,12,12,20);
+        // let date = new Date(2024, 1, 20, 0,0,0)
+        // console.log(now);
+        // document.getElementById('time').innerHTML = dt;
+        // let present = new Date();
+        // let yr = present.getFullYear();
+        // let m = present.getMonth()+1;
+        // let dt = present.getDate();
+        // let hrs = present.getHours();
+        // let min = present.getMinutes();
+        // console.log("year: " + yr )
+        // console.log("month: " + m)
+        // console.log("day: " + dt);
+        // console.log("hour: " + hrs );
+        // console.log("min: " + min );
+        // let time = new Date();
+        // let hrs = time.getHours();
+        // let min = time.getMinutes();
+        // let sec = time.getSeconds();
+        // function tm(){
+        //     let present = document.getElementById('time').innerHTML = presentTime; 
+        //     // presentTime = `${hrs} :${min} :${sec}`;
+        //     presentTime = new Date();
+        //     // time.innerHTML = hrs + ":" + min + ":" + sec
+        //     // console.log( );
+        // }
+        // setInterval(tm, 1000);
+        /*function DisplayTime(){
+            let time = new Date();
+            let hrs = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            document.getElementById('time').innerHTML = `${hrs} : ${min} : ${sec}`;
+        }*/
+        setInterval(() => {
+            let time = new Date();
+            let hrs = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            document.getElementById('time').innerHTML = `${hrs} : ${min} : ${sec}`;
+        }, 1000);
+    </script>
+</body>
+</html>

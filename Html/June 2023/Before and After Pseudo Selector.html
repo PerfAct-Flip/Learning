@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <style>
+        body{
+            color: white;
+            background-color: black;
+            
+            margin: 0;
+            padding: 0;
+        }
+        header::before{
+            background:url("bookcover.jpg") no-repeat center center/cover;
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left:0;
+            opacity: 0.5;
+        }
+        /* ul{
+            margin: 1px;
+            padding: 8px;
+        } */
+        .navigation{
+            font-size: 24px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            /* padding: 20px; */
+            padding: 6px;
+            margin: 12px;
+            background-color: black;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin:20px 187px;
+            align-items: center;
+            /* border: 2px solid brown; */
+            height: 300px;
+            justify-content: center;
+        }
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            text-align: center;
+        }
+        /* section::before{
+            content:"this is content before section."
+        } */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item" id="item1">Home</li>
+                <li class="item" id="item2">Services</li>
+                <li class="item" id="item3">About</li>
+                <li class="item" id="item4">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <h3>Coding World</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate blanditiis quas, laudantium maxime deleniti? Voluptas corporis veritatis natus dolorum? </p>
+    </section>
+    <hr>
+</body>
+</html>

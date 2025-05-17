@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+         @media only screen and (max-width: 300px){
+            body{
+                background-color: rgb(41, 24, 24);
+            }
+            .container{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (max-width: 500px) and (min-width:300px){
+            body{
+                background-color: rgb(252, 13, 13);
+            }
+            aside{
+                display: none;
+            }
+            .container{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (max-width: 800px) and (min-width:500px){
+            body{
+                background-color: rgb(39, 175, 27);
+            }
+            .container{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+    }
+        @media only screen and (min-width: 800px){
+            body{
+                background-color: rgb(20, 2, 124);
+            }
+        }
+        nav, section, aside, footer{
+            border: 3px solid white;
+            background-color: rgb(49, 42, 42);
+            color:aliceblue;
+        }
+    </style>
+    <title>Using Media Queries in CSS Grid</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <span> Home</span>
+            <span> About Us</span>
+            <span> Contact Us</span>
+            <span> Services</span>
+        </nav>
+        <section>
+            <h2>This is a a CSS grid.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, deleniti accusamus! Adipisci optio asperiores velit illum, vitae commodi dolorum numquam, nemo iure dicta laboriosam hic fuga ea blanditiis tempora quod eaque iusto ducimus quis est quibusdam ipsam ratione explicabo officiis. Veniam fugit, dolorum nihil iusto libero tempore laborum sequi nesciunt exercitationem sed sapiente iure ipsam perspiciatis non ab harum ex? Labore quidem perferendis at laboriosam dolor mollitia repellat voluptates praesentium. Animi numquam voluptas, nulla expedita amet natus quasi eveniet explicabo sunt vitae praesentium temporibus sint a id eligendi, sed totam laboriosam? Eius maxime expedita voluptatem tempore ipsa doloremque at impedit. Consequatur ducimus vero nisi et cum? Ducimus adipisci earum, animi dolores necessitatibus consequatur! Earum ex quae quod. Fugit in repellat aliquam non, vero, corrupti hic soluta accusantium, doloribus temporibus minima perferendis quod eligendi sequi magnam qui quas molestiae velit incidunt? Cum ratione ex provident quisquam quae, non aspernatur similique laudantium alias obcaecati quam tenetur expedita explicabo quidem pariatur autem harum reprehenderit necessitatibus qui enim! Alias tempora voluptatem odio voluptatum harum illo dolorum adipisci explicabo, doloribus voluptates beatae laboriosam perspiciatis assumenda. Error ad quos amet rerum maxime nostrum. Voluptates tempore non minima ratione, distinctio ipsa iste dolorum esse quisquam quis asperiores.</p>
+        </section>
+        <aside>
+            <h1> More About Us</h1>
+        </aside>
+    </div>
+    <footer> Copyright &copy;</footer>
+</body>
+</html>

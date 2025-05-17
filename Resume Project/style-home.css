@@ -1,0 +1,68 @@
+body{
+    background-color:#0f1012;
+}
+
+/*  Navigation Bar*/
+.navbar{
+    background-image: url(images/g.png);
+    border: solid #fbaf01  2px;
+    border-radius: 3px;
+}
+/* to arrange them in straight line. */
+.navbar li{
+    float: right;
+    list-style: none;
+    padding: 3px;
+    margin: 10px;
+}
+/* to get bg-color back */
+.navbar ul{
+    overflow: auto;
+}
+
+.navbar a{
+    padding: 3px;
+    text-decoration: none;
+    color: rgb(255, 251, 251);
+}
+
+a:hover{
+    background-color: brown;
+}
+.search{
+    float:right;
+    padding: 12px 20px;
+    margin: auto;
+}
+
+.navbar input{
+    border: 4px;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+
+/* Navigation Bar end here!! */
+
+#name{
+    float: left;
+    color: black; 
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+#pinfo{
+    color: whitesmoke;
+}
+
+.pinfo{
+    font-size: 20px;
+}
+
+#pinfo-heading{
+    font-size: 40px;
+
+}
+
+
+/* button */
+

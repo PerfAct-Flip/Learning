@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute, relative, fixed and sticky in CSS</title>
+    <style>
+        .box{
+            border: 3px rgb(47, 47, 124) solid;
+            color: bisque;
+            background-color: black;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            padding: 1px;
+            display: inline-block;
+        }
+        #box1{
+            border-color: aqua;
+            position: sticky;
+            /* top: 70px; */
+            top: 130px;
+            /* relative: we can change its position with respect to normal position i.e., relative to its normal position */
+            /* absoulte, static(default), relative fixed, sticky */
+        }
+        /* absolute leaves no space but relative leaves space  */
+        /* fixed: fixs a element at the position,even if scrolled 
+        relative to the broweser window*/
+        .container{
+            border: 3px solid red;
+            height: 1300px;
+        }
+        #box3{
+            border-color: aqua;
+            position: fixed;
+            /* top: 70px; */
+            right: 130px;
+        }
+    </style>
+
+</head>
+<body>
+     <!-- <h1>Position absolute, relative, fixed and sticky in CSS</h1>
+      -->
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{background-color: rgb(14, 11, 11);}
+header{border: 2px white;
+    border-style: dotted;
+}
+
+.navbar{
+    background-image: url(g.png);
+    border: solid rgb(185, 96, 96);
+    border-radius: 4px;
+}
+/* to arrange them in straight line */
+.navbar li{
+    float: left;
+    list-style: none;
+    padding: 3px;
+    margin: 10px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar a{
+    padding: 3px;
+    text-decoration: none;
+    color: rgb(22, 21, 20);
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+.navbar a:hover{
+    background-color: brown;
+}
+.search{
+    float: right;
+    padding: 12px;
+}
+.navbar input{
+    border: 4px;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+

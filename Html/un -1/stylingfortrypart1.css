@@ -1,0 +1,22 @@
+/* display properties */
+/* #head2{
+    border: 1px solid yellowgreen ;
+    
+} */
+img{
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+header h2{
+    margin: 0px;
+    text-align: center;
+    color: bisque;
+}
+.container2{
+    color: blanchedalmond;
+    border: 2px solid rgb(145, 162, 214);
+    box-sizing: border-box;
+    width: 430px;
+    display: inline-block;
+}

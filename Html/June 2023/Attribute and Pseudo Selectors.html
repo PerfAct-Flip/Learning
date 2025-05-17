@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child pseudo selectors</title>
+    <style>
+        input{
+            display:block;
+        }
+        .container{
+            width: 250px;
+            margin: auto;
+            display: block;
+            
+        }
+        input[type='text']{
+            padding: 10px;
+            border: 2px solid red;
+        }
+        a[target]{
+            color: whitesmoke;
+            background-color: rgb(42, 5, 102);}
+        a[target='_self']{
+            color: whitesmoke;
+            background-color: rgb(5, 103, 18);
+        }
+        li:nth-child(2n+0){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://google.com" target="_blank">Google</a>
+        <a href="https://youtube.com" target="_self">Youtube</a>
+
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item-1</li>
+            <li class="item" id="item2">Item-2</li>
+            <li class="item" id="item3">Item-3</li>
+            <li class="item" id="item4">Item-4</li>
+            <li class="item" id="item5">Item-5</li>
+        </ul>
+
+    </div>
+</body>
+</html>

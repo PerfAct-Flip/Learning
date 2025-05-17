@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        /* CSS RESET */
+        body{
+            color: beige;
+            margin: 0px;
+            padding: 0px;
+            background: url('cover3.jfif');     
+        }
+        .left{
+            display: inline-block;
+            border: 3px solid brown;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+
+        }
+        .right{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            display: inline-block;
+            border: 3px solid rgb(124, 209, 195);
+
+        }
+        .center{
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+            /* display: inline-block; */
+           
+            border: 3px solid rgb(91, 165, 42);
+
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            text-decoration: none;
+            padding: 34px 24px;
+            color: beige;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: brown;
+            background-color: antiquewhite;
+        }
+        .left img{
+            width: 80px;
+            filter: invert(90%);
+        }
+        .left div{
+            text-align: center;
+            color: brown;
+        }
+        .btn{
+            margin: 4px 10px;
+            background-color: brown;
+            color: beige;
+            padding: 4px 4px;
+            border: 2px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(121, 117, 117);
+        }
+        .moving-text {
+            font-size: 2em;
+            white-space: nowrap;
+            color: brown;
+            animation: move 5s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        #para{
+            padding: 10px;
+            margin: 50px;
+
+        }
+    </style>
+    <link rel="stylesheet" href="fitness.css">
+
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo-->
+        <div class="left">
+            <img src="logo.jpg" alt="logo">
+            <div>Fitness</div>
+            
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="center">
+            <ul class="navbar">
+                <li id="option1"><a href="#" classs="active">
+                    Home
+                </a></li>
+                <li id="option2"><a href="#">
+                    About Us
+                </a></li>
+                <li id="option3"><a href="#">
+                    Fitness Calculator
+                </a></li>
+                <li id="option4"><a href="#">
+                    Contact Us
+                </a></li>
+
+            </ul>
+        </div>
+
+
+       <center> <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusamus animi saepe quas eum amet eveniet facere? Porro autem voluptates tempore itaque ex.
+    </p></center>
+        <div class="moving-text">This text moves across the screen!</div>
+        <div>
+        
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+
+    
+</body>
+</html>

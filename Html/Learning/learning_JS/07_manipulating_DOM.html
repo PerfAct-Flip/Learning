@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            background-color: brown;
+            padding: 5px;
+            height: auto;
+            width: 100%;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-content: center;
+        }
+        li{
+            background-color: black;
+            padding: 4px 10px;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>More abt Us</li>
+        </ul>
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav)
+        let sel = document.querySelectorAll('#nav>li')
+        console.log(sel);
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 150px;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 1.1em; */
+    height: 450px;
+}
+p{
+    text-align: center;
+}
+#home::before{
+    content: "";
+    background: url(home.png) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#home h1{
+    /* color: black; */
+    color: whitesmoke;
+    text-align: center;
+    
+    padding: 5px 15px;
+    
+}
+#home p{
+    /* color: black; */
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive; 
+    font-size: 17px;
+}
+#home button{
+    margin: 4px;
+    padding: 4px 15px;
+    background-color: rgb(77 94 115 / 60%);
+    /* border: 2px solid black; */
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    font-size: 1em;
+    transition: all 0.1s ease-in-out;
+    /* transition: backcolor 0.2s ease-in 0.; */
+
+}
+#home button:hover{
+    /* background-color: rgba(0, 0, 0, 0.603); */
+    background-color: rgba(245, 245, 245, 0.623);
+    /* color: rgb(77 94 115 ); */
+    color: black;
+    transform: scale(1.2);
+
+    
+}
+
+/* contries section  */
+
+.country-list{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow: auto; */
+    height: 600px;
+    width: 100%;
+    /* margin-top: auto; */
+}
+.country-list h1{
+    margin-bottom: 10px;
+}
+#countries{
+    /* margin: 20px ; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    /* align-items: center; */
+    
+
+}
+#countries .box{
+    display: inline;
+    border: 4px solid red;
+    width: 550px;
+    height: 360px;
+    padding: 0;
+    margin: 10px;
+}
+#countries .box img{
+    display: block;
+    padding-top: 10px;
+    margin: auto;
+    height: 200px;
+    width: 400px;
+
+
+}
+
+/* Utility classes */
+.h-primary{
+    font-size: 3rem;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+}
+.h-secondary{
+    font-size: 2em;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+}
+.center{
+    text-align: center;
+}
+
+
+/* .box{
+    border: 4px solid red;
+    width: 400px;
+    height: 400px;
+}
+.box img{
+  
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+}
+ */

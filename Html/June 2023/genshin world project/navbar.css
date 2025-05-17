@@ -1,0 +1,57 @@
+/* CSS reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* width: 10vh; */
+}
+#navbar::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+/* Naviation Bar: Logo and items */
+
+#logo{
+    /* margin: 10px; */
+}
+
+#logo img{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+/* Naviation Bar: list styling */
+#nav-list{
+    display: flex;
+    
+}
+.item{
+    list-style: none;
+    font-size: 1.05em ;
+}
+.item a{
+    font-family: 'Lilita One', cursive;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: whitesmoke;
+    border-radius: 10px;
+    display: block;
+    letter-spacing: 1px;
+}
+.item a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}

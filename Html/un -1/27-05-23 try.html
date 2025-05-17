@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav-style.css">
+    <link rel="stylesheet" href="stylingfortrypart1.css">
+    <!-- Styling for content and intro -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 4px rgb(6, 32, 23);
+            border-style: double;
+            width: auto;
+            margin: auto;
+        }
+        .item{
+            border: 3px solid darkcyan;
+            margin: 5px 10px;
+            padding: 5px 5px;
+            background-color: rgb(125, 150, 172);
+        }
+        #Indie{
+            float: left;
+            width: 47%;
+
+        }
+        #Hindi{
+            float: right;
+            width: 47%;
+        }
+        #J-pop{
+            clear: both;
+        }
+        .item p, h2{
+            text-align: justified;
+        }
+        #intro h2,#intro p{
+            text-align: center;
+            color: bisque;
+            font-family: Geologica;
+        }
+        #intro{
+            border: 2px solid grey;
+            background-color: brown;
+        }
+        a{
+            text-decoration: none;
+            border: 0.5px solid black;
+        }
+        a:hover{
+            color: bisque;
+            background-color: rgb(29, 40, 49);
+            
+        }
+        a:active{
+            color: black;
+            background-color:rgb(10, 109, 73);
+        }
+        a:visited{
+            color: rgb(53, 34, 158) ;
+            background-color: aliceblue;
+        }
+        .btn{
+            color: brown;
+            padding: 3px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            /* color: brown; */
+            background-color: rgb(219, 201, 238);
+        }
+        button:active{
+            color: blue;
+            background-color: rgb(211, 126, 126);
+        }
+        button:visited{
+            color: blueviolet;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="gow.png">
+    <h2>Garden of Words</h2>
+    <br>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="https://www.bing.com">Bing</a></li>
+                <li><a href="https://www.youtube.com
+                    ">Youtube</a></li>
+                <li><a href="https://wwww.notion.so">Notion</a></li>
+                <div class="search">
+                    <input type="search" placeholder="Search">
+                    
+                </div>
+            </ul>
+        </nav>
+    </header>
+<br><br>
+<div class="container2">
+    <h3>heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus recusandae incidunt, facere, nam unde praesentium asperiores molestias commodi optio voluptas nostrum qui autem aspernatur ut mollitia ducimus facilis sunt voluptatem nihil aperiam corrupti.</p>
+</div><div class="container2">
+    <h3>heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus recusandae incidunt, facere, nam unde praesentium asperiores molestias commodi optio voluptas nostrum qui autem aspernatur ut mollitia ducimus facilis sunt voluptatem nihil aperiam corrupti.</p>
+</div><div class="container2">
+    <h3>heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloribus recusandae incidunt, facere, nam unde praesentium asperiores molestias commodi optio voluptas nostrum qui autem aspernatur ut mollitia ducimus facilis sunt voluptatem nihil aperiam corrupti.</p>
+</div>
+    <!-- Intro box with buttons and links -->
+    <div id="intro">
+        <h2>Intro To Music</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus tempora, ullam modi nulla laboriosam itaque sit quod voluptatem earum laborum officia suscipit officiis quibusdam quis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum obcaecati quae quas illo hic sint fugit perspiciatis autem totam nostrum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam soluta quibusdam corrupti sint in non saepe. Tempora nisi veniam sit.</p>
+        <a href="">Read more</a><span>&nbsp</span><button class="btn">see more
+        </button>
+    </div>
+    <!-- Content with three boxs -->
+    <div class="container">
+        <div class="item" id="Indie">
+            <h2>Indie</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda placeat nulla eaque?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam iure cum modi culpa illum! Omnis voluptatum, quam a amet, cum explicabo iusto, nemo exercitationem quas harum ipsam facilis commodi quae.</p>
+        </div>
+        <div class="item" -id="Hindi">
+            <h2>Hindi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda placeat nulla eaque?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam iure cum modi culpa illum! Omnis voluptatum, quam a amet, cum explicabo iusto, nemo exercitationem quas harum ipsam facilis commodi quae.</p>
+        </div>
+        <div class="item" id="J-pop">
+            <h2>J-pop</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda placeat nulla eaque?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam iure cum modi culpa illum! Omnis voluptatum, quam a amet, cum explicabo iusto, nemo exercitationem quas harum ipsam facilis commodi quae.</p>
+        </div>
+    </div>
+    <!-- divs with position properties -->
+    <div class="posbox" id="posbox1">posbox1</div>
+    <div class="posbox" id="posbox2">posbox2</div>
+    <div class="posbox" id="posbox3">posbox3</div>
+    <div class="posbox" id="posbox4">posbox4</div>
+</body>
+</html>

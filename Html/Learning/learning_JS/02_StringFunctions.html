@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+    
+</head>
+<body>
+    <span>String Functions!!</span><br>
+    <span id="word"></span>
+    <p id = "len"></p>
+    <script>
+        let str = "This is a String";
+        // console.log(str.indexOf('a'));
+        document.getElementById('word').innerHTML = str;
+        document.getElementById('len').innerHTML = ` index of word is `+ str.indexOf('a');
+        // first occurence of subString - str.indexof('a')
+        // last occurenence of subString - str.lastof('a')
+        // subString from a String
+        // subString can't take negative values whereas slice can take negative values
+        /*
+        console.log("length of str is " + str.length);
+        console.log(str.substring(0,4));
+        console.log(str.slice(10,16));
+        */
+        
+        //replace string
+        /*
+        let replaced = str.replace('String' , 'Soham');
+        let rep = str.replace('This is a String' , 'this is the String of blah blah')
+        console.log(replaced);
+        console.log(str);
+        console.log(rep);
+        */-
+       // string to upper or lower case
+       console.log(str.toUpperCase());
+       console.log(str.toLowerCase());
+
+       //add a String to with a existing string
+       let newstr = str.concat(". This is a new string.");
+       console.log(newstr);
+       //to remove whitespace from sides we use - .trim
+       //to get char at a particular position we use - charAt
+       console.log(str.charAt(2));
+       //charCodeAt gives UTF code
+       console.log(str.charCodeAt(2));
+    </script>
+</body>
+</html>
